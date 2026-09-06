@@ -376,14 +376,14 @@ textarea {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-bento-sm);
-  background-color: var(--bento-blue-700);
+  /* background-color: var(--bento-blue-700); */
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   font-size: 1.1rem;
-  box-shadow: 0 2px 6px rgba(29, 78, 216, 0.3);
+  /* box-shadow: 0 2px 6px rgba(29, 78, 216, 0.3); */
 }
 
 .brand-text {

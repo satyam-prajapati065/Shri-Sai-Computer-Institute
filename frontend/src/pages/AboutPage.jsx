@@ -80,7 +80,7 @@ export default function AboutPage({ onNavigate }) {
             <div className="about-story-media">
               <div className="media-bento-card">
                 <img
-                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+                  src="../../public/ClassImg/Lab.jpeg"
                   alt="Students learning at Shri Sai Computer Institute"
                   className="media-img"
                   loading="lazy"

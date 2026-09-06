@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { instituteData } from '../data/instituteData.js';
-import { 
-  Phone, 
-  Clock, 
-  Menu, 
-  X, 
-  Laptop, 
+import React, { useState, useEffect } from "react";
+import { instituteData } from "../data/instituteData.js";
+import {
+  Phone,
+  Clock,
+  Menu,
+  X,
+  Laptop,
   Sparkles,
   BookOpen,
   ShieldCheck,
   Building2,
   MessageSquare,
-  ChevronRight
-} from 'lucide-react';
+  ChevronRight,
+} from "lucide-react";
 
 export default function Navbar({ activePage, onNavigate }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,28 +26,28 @@ export default function Navbar({ activePage, onNavigate }) {
         setIsScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About Us' },
-    { id: 'courses', label: 'Courses' },
-    { id: 'why-us', label: 'Key Features' },
-    { id: 'training', label: 'Training' },
-    { id: 'contact', label: 'Contact' },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About Us" },
+    { id: "courses", label: "Courses" },
+    { id: "why-us", label: "Key Features" },
+    { id: "training", label: "Training" },
+    { id: "contact", label: "Contact" },
   ];
 
   const handleNavClick = (pageId, e) => {
     if (e) e.preventDefault();
     setMobileMenuOpen(false);
     onNavigate(pageId);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <header className={`navbar-header ${isScrolled ? 'scrolled' : ''}`}>
+    <header className={`navbar-header ${isScrolled ? "scrolled" : ""}`}>
       {/* Top Bar for contact & badge */}
       <div className="top-bar">
         <div className="container">
@@ -59,7 +59,10 @@ export default function Navbar({ activePage, onNavigate }) {
           <div className="top-bar-item">
             <Phone size={13} />
             <span>Call / WhatsApp: </span>
-            <a href={`tel:${instituteData.phone}`} style={{ fontWeight: '700' }}>
+            <a
+              href={`tel:${instituteData.phone}`}
+              style={{ fontWeight: "700" }}
+            >
               {instituteData.phoneDisplay}
             </a>
           </div>
@@ -73,10 +76,10 @@ export default function Navbar({ activePage, onNavigate }) {
           <a
             href="#home"
             className="brand-logo"
-            onClick={(e) => handleNavClick('home', e)}
+            onClick={(e) => handleNavClick("home", e)}
           >
             <div className="brand-icon-box">
-              <Laptop size={24} />
+              <img src="../../public/ClassImg/Logo.png" alt="" />
             </div>
             <div className="brand-text">
               <span className="brand-title">SHRI SAI</span>
@@ -90,12 +93,14 @@ export default function Navbar({ activePage, onNavigate }) {
               <li key={item.id}>
                 <a
                   href={`#${item.id}`}
-                  className={`nav-link ${activePage === item.id ? 'active' : ''}`}
+                  className={`nav-link ${activePage === item.id ? "active" : ""}`}
                   onClick={(e) => handleNavClick(item.id, e)}
                   id={`nav-link-${item.id}`}
                 >
                   {item.label}
-                  {item.id === 'courses' && <span className="nav-count-badge">10+</span>}
+                  {item.id === "courses" && (
+                    <span className="nav-count-badge">10+</span>
+                  )}
                 </a>
               </li>
             ))}
@@ -105,7 +110,7 @@ export default function Navbar({ activePage, onNavigate }) {
           <div className="nav-actions">
             <button
               className="btn btn-red btn-sm"
-              onClick={(e) => handleNavClick('contact', e)}
+              onClick={(e) => handleNavClick("contact", e)}
               id="header-demo-cta-btn"
             >
               Book Free Demo
@@ -130,7 +135,7 @@ export default function Navbar({ activePage, onNavigate }) {
               <li key={item.id}>
                 <a
                   href={`#${item.id}`}
-                  className={`mobile-nav-link ${activePage === item.id ? 'active' : ''}`}
+                  className={`mobile-nav-link ${activePage === item.id ? "active" : ""}`}
                   onClick={(e) => handleNavClick(item.id, e)}
                 >
                   <span>{item.label}</span>
@@ -140,17 +145,24 @@ export default function Navbar({ activePage, onNavigate }) {
             ))}
           </ul>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '16px' }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "10px",
+              marginTop: "16px",
+            }}
+          >
             <button
               className="btn btn-red btn-block"
-              onClick={(e) => handleNavClick('contact', e)}
+              onClick={(e) => handleNavClick("contact", e)}
             >
               Book Free Demo Class (2 Days)
             </button>
             <a
               href={`tel:${instituteData.phone}`}
               className="btn btn-secondary btn-block"
-              style={{ justifyContent: 'center' }}
+              style={{ justifyContent: "center" }}
             >
               <Phone size={16} /> Call {instituteData.phoneDisplay}
             </a>
