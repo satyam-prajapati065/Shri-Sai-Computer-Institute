@@ -26,7 +26,7 @@ export default function TrainingPage({ onNavigate }) {
 
   const classroomImages = [
     {
-      url: "../../public/ClassImg/Lab.jpeg",
+      url: "/ClassImg/Lab.jpeg",
       title: "Individual Computer Lab Training",
       caption:
         "Students practicing real software workflows with individual system allocation.",

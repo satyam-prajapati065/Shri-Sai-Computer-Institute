@@ -79,7 +79,7 @@ export default function Navbar({ activePage, onNavigate }) {
             onClick={(e) => handleNavClick("home", e)}
           >
             <div className="brand-icon-box">
-              <img src="../../public/ClassImg/Logo.png" alt="" />
+              <img src="ClassImg\Logo.png" alt="" />
             </div>
             <div className="brand-text">
               <span className="brand-title">SHRI SAI</span>
