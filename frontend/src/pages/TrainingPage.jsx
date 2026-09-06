@@ -371,7 +371,7 @@ export default function TrainingPage({ onNavigate }) {
               </div>
               <h4>Flexible Batch Timings</h4>
               <p>
-                Morning, afternoon, and evening batches from 7:00 AM to 7:00 PM
+                Morning, afternoon, and evening batches from 9:00 AM to 5:00 PM
                 to fit your routine.
               </p>
             </div>
