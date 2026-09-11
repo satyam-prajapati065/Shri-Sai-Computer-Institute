@@ -14,10 +14,8 @@ This folder contains the Node.js / Express API backend ready to deploy on **Rend
    - **Build Command:** `npm install`
    - **Start Command:** `node server.js`
    - **Instance Type:** `Free`
-5. Under **Environment Variables**:
-   - `CLIENT_URL`: `*` (or your Netlify site URL like `https://your-site.netlify.app`)
 6. Click **"Create Web Service"**.
-7. Copy your backend URL (e.g., `https://shri-sai-backend.onrender.com`) and add it to your Netlify frontend environment variable `VITE_API_URL`.
+7. Copy your backend URL (e.g., `https://shri-sai-backend.onrender.com`) and add it to your  frontend environment variable `VITE_API_URL`.
 
 ## API Endpoints:
 - `GET /api/health` - Server health check & status
