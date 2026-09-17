@@ -161,7 +161,16 @@ export default function ContactPage({ selectedCourse, onNavigate }) {
                 >
                   {instituteData.trainers.map((trainer, idx) => (
                     <div key={idx} className="trainer-contact-mini">
-                      <div className="mini-avatar">{trainer.initials}</div>
+                      <div className="mini-avatar">
+                        {trainer.trainerImg ? (
+                          <img
+                            src={trainer.trainerImg}
+                            alt={trainer.initials || "Trainer"}
+                          />
+                        ) : (
+                          trainer.initials
+                        )}
+                      </div>
                       <div>
                         <strong>{trainer.name}</strong>
                         <div className="mini-sub">{trainer.role}</div>

@@ -2257,6 +2257,14 @@ textarea {
   font-weight: 600;
 }
 
+.preview-card-left-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+}
+
+
 .preview-card-right {
   display: flex;
   flex-direction: column;
@@ -2311,6 +2319,7 @@ textarea {
   align-items: center;
   justify-content: center;
   font-size: 0.95rem;
+  overflow: hidden;
   flex-shrink: 0;
 }
 
@@ -2570,6 +2579,7 @@ textarea {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(30, 58, 138, 0.2);
+  overflow: hidden;
 }
 
 .faculty-name {
@@ -3692,6 +3702,7 @@ textarea {
   font-weight: 800;
   font-size: 0.85rem;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .mini-sub {
@@ -3818,6 +3829,10 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .preview-card-left-buttons {
+    flex-direction: column;
+  }
+
   .home-preview-grid {
     grid-template-columns: 1fr;
   }
@@ -3908,6 +3923,11 @@ textarea {
 @media (max-width: 768px) {
   .bento-ribbon-grid {
     grid-template-columns: 1fr;
+  }
+
+
+  .top-bar {
+    display: none;
   }
 
   .faculty-grid {

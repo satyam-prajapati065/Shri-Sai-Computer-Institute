@@ -32,19 +32,31 @@ export default function TrainingPage({ onNavigate }) {
         "Students practicing real software workflows with individual system allocation.",
     },
     {
-      url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
+      url: "ClassImg/lab1.jpeg",
       title: "Supportive Mentorship & Guidance",
       caption:
         "Dedicated faculty Annu Gupta & Sadhna Jaiswal providing step-by-step guidance.",
     },
     {
-      url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+      url: "ClassImg/lab2.jpeg",
       title: "Accounting & Tally Prime Lab",
       caption:
         "Hands-on practice on ledger creation, voucher entries, GST billing, and taxation.",
     },
     {
-      url: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
+      url: "ClassImg/lab6.jpeg",
+      title: "Typing Speed Building Lab",
+      caption:
+        "Daily Hindi & English typing drills using standardized examination typing software.",
+    },
+    {
+      url: "ClassImg/lab7.jpeg",
+      title: "Typing Speed Building Lab",
+      caption:
+        "Daily Hindi & English typing drills using standardized examination typing software.",
+    },
+    {
+      url: "ClassImg/lab5.jpeg",
       title: "Typing Speed Building Lab",
       caption:
         "Daily Hindi & English typing drills using standardized examination typing software.",
@@ -179,7 +191,7 @@ export default function TrainingPage({ onNavigate }) {
                 </div>
                 <div className="track-media">
                   <img
-                    src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=700&q=80"
+                    src="https://i0.wp.com/brighttech.in/wp-content/uploads/2025/05/Top-10-TallyPrime-Shortcuts-to-Boost-Your-Efficiency.jpeg?fit=768%2C768&ssl=1"
                     alt="Accounting training at Shri Sai Institute"
                     className="track-img"
                   />
@@ -223,7 +235,7 @@ export default function TrainingPage({ onNavigate }) {
                 </div>
                 <div className="track-media">
                   <img
-                    src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80"
+                    src="https://sscstudy.com/wp-content/uploads/2022/08/image-3.png"
                     alt="Typing speed training"
                     className="track-img"
                   />
@@ -309,7 +321,7 @@ export default function TrainingPage({ onNavigate }) {
                 </div>
                 <div className="track-media">
                   <img
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDb2e1BlwgubVg2FEMu50-TBVN8fQNAJeomvnVa-x3d3gMC25sHP_41E&s=10"
                     alt="MS Office and Excel training"
                     className="track-img"
                   />

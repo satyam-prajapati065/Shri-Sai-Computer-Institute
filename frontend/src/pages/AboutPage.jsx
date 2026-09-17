@@ -186,7 +186,16 @@ export default function AboutPage({ onNavigate }) {
             {instituteData.trainers.map((trainer, index) => (
               <div key={index} className="faculty-card">
                 <div className="faculty-card-header">
-                  <div className="faculty-avatar-large">{trainer.initials}</div>
+                  <div className="faculty-avatar-large">
+                    {trainer.trainerImg ? (
+                      <img
+                        src={trainer.trainerImg}
+                        alt={trainer.initials || "Trainer"}
+                      />
+                    ) : (
+                      trainer.initials
+                    )}
+                  </div>
                   <div>
                     <h3 className="faculty-name">{trainer.name}</h3>
                     <span className="faculty-role-badge">{trainer.role}</span>

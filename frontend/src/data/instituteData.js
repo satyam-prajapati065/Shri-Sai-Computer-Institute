@@ -32,6 +32,7 @@ export const instituteData = {
       role: "Director",
       expertise: "Tally Prime, GST Accounting",
       initials: "DK",
+      trainerImg: "ClassImg/dk.jpeg",
     },
     {
       name: "Annu Gupta",
